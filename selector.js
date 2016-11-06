@@ -1,7 +1,7 @@
 // Transverse DOM using BFS to find and match items
 
 var traverseDomAndCollectElements = function(matchFunc, startEl) {
-  var resultSet = [];
+
   
   if (typeof startEl === "undefined") {
     startEl = document.body;

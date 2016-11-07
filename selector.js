@@ -2,12 +2,13 @@
 
 var traverseDomAndCollectElements = function(matchFunc, startEl) {
 
-  
   if (typeof startEl === "undefined") {
     startEl = document.body;
   }
 
   let queue = [startEl];
+
+  // while queue items exist to be checked
   while(queue.length){
     currentEl = queue.shift()
 
